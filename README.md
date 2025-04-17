@@ -24,9 +24,9 @@ Anywhere you want to store a Resource path, use `@export_custom(SRP_HINT.RESOURC
 @export_custom(SRP_HINT.RESOURCE_PATH, "PackedScene") var scene_path: String
 
 func get_scene() -> PackedScene:
-    return load(scene_path)
+	return load(scene_path)
 ```
 
 # Limitations
 
-Arrays don't work yet.
+Arrays don't work yet. You may need to manually save resources when making changes to safe resource properties.

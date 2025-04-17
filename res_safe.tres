@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SafeResource" load_steps=2 format=3 uid="uid://bkb8eeln6hmc8"]
+
+[ext_resource type="Script" uid="uid://63f5hnoesqhs" path="res://resource_safe.gd" id="1_73g5j"]
+
+[resource]
+script = ExtResource("1_73g5j")
+scene_path = "res://orb.glb"
+metadata/_custom_type_script = "uid://63f5hnoesqhs"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="NormalResource" load_steps=3 format=3 uid="uid://wg64cjcei7x3"]
+
+[ext_resource type="Script" uid="uid://dtn8ictl7n6t0" path="res://resource_normal.gd" id="1_24xoq"]
+[ext_resource type="PackedScene" uid="uid://b78882h1w2tc1" path="res://orb.glb" id="1_lleu2"]
+
+[resource]
+script = ExtResource("1_24xoq")
+scene = ExtResource("1_lleu2")
+metadata/_custom_type_script = "uid://dtn8ictl7n6t0"

@@ -1,0 +1,19 @@
+class_name SafeResourcePickerEditorProperty extends EditorProperty
+
+var _picker: EditorResourcePicker
+
+func _init(type: String) -> void:
+	_picker = EditorResourcePicker.new()
+	_picker.base_type = type
+	_picker.resource_changed.connect(_on_resource_changed)
+	add_child(_picker)
+
+func _on_resource_changed(r: Resource) -> void:
+	emit_changed(get_edited_property(), r.resource_path)
+
+func _update_property() -> void:
+	var current_path: String = get_edited_object()[get_edited_property()]
+	if current_path:
+		_picker.edited_resource = load(current_path)
+	else:
+		_picker.edited_resource = null

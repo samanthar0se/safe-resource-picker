@@ -1,4 +1,4 @@
-# Safe Resource Picker for Godot 4
+# Safe Resource Picker for Godot 4.4+
 
 If you've ever written `@export var scene: PackedScene` or `@export var item: CustomResource` in your resource or node to store data, then you're benefitting from the type safety of the Godot Inspector ensuring that only `PackedScene` or `CustomResource` values can be stored in your property. However, now your resource or node contains that entire resource, too, and whenever your resource or node loads, so does that resource!
 
@@ -10,7 +10,7 @@ With the **Safe Resource Picker**, you can write `@export_custom(SRP_HINT.RESOUR
 
 ## Supported Versions
 
-Tested on Godot v4.4.1, but it should work in Godot v4.0 and higher, as it doesn't use any newer GDScript features like typed arrays. If you use a version prior to v4.4, you can probably delete the `.gd.uid` files.
+To ensure that data isn't corrupted when moving files, Resource UIDs are stored and used by this plugin. As full UID support wasn't available until 4.4, this plugin may not work with some resource types in earlier versions of Godot. As UIDs did not exist at all in Godot 3, this plugin will not work at all with Godot 3.
 
 ## Installation
 

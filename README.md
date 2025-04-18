@@ -29,4 +29,4 @@ func get_scene() -> PackedScene:
 
 # Limitations
 
-Arrays don't work yet. You may need to manually save resources when making changes to safe resource properties.
+Arrays and Dictionaries don't work yet.

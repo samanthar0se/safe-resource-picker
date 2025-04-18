@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=3 uid="uid://cscgwqstvsio1"]
+
+[ext_resource type="Script" uid="uid://c7j14e6rh5056" path="res://example_scene.gd" id="1_08apm"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oxda6"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_08apm"]
+sky_material = SubResource("ProceduralSkyMaterial_oxda6")
+
+[sub_resource type="Environment" id="Environment_uabj3"]
+background_mode = 2
+sky = SubResource("Sky_08apm")
+tonemap_mode = 2
+
+[node name="ExampleScene" type="Node3D"]
+script = ExtResource("1_08apm")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_uabj3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -328.0
+offset_top = 32.0
+offset_right = 328.0
+offset_bottom = 123.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Control/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(640, 0)
+layout_mode = 2
+text = "Run this scene in the Godot Editor, then while it's running, switch to the Debugger and check the \"Memory - Static Max\", \"Object - Resources\", and all 3 options in the \"Video\" section. Observe their values, then click the button below."
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Control"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -63.0
+offset_right = 150.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Load Standard Resource into Memory"
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]

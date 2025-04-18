@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Safe Resource Picker"
-run/main_scene="uid://dojnxectq8khj"
+run/main_scene="uid://cscgwqstvsio1"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

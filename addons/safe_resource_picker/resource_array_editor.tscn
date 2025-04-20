@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnhv2yvr3dka0"]
+
+[ext_resource type="Script" uid="uid://s82s2w7elvlx" path="res://addons/safe_resource_picker/resource_array_editor.gd" id="1_qf2f1"]
+
+[node name="ResourceArrayEditor" type="VBoxContainer"]
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_qf2f1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="PropName" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Name"
+
+[node name="PropDesc" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Array[PackedScene uid] (size 0)"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Size:"
+
+[node name="SpinBox" type="SpinBox" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Records" type="VBoxContainer" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AddElementButton" type="Button" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "+ Add Element"

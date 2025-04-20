@@ -18,7 +18,7 @@ text = "Name"
 [node name="PropDesc" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Array[PackedScene uid] (size 0)"
+text = "Array[PackedScene] (size 0)"
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 2
@@ -34,7 +34,8 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "Size:"
 
-[node name="SpinBox" type="SpinBox" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="ArraySize" type="SpinBox" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -44,7 +45,8 @@ layout_mode = 2
 
 [node name="AddElementButton" type="Button" parent="PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(170, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "+ Add Element"
+text = "Add Element"

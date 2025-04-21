@@ -13,6 +13,7 @@ var _count := 0:
 @onready var _prop_name: Label = $HBoxContainer/PropName
 @onready var _prop_desc: Button = $HBoxContainer/PropDesc
 @onready var _array_size: SpinBox = %ArraySize
+@onready var _pagination: Pagination = %Pagination
 
 func _ready() -> void:
 	_add_element_button.icon = get_theme_icon(&"Add", &"EditorIcons")
@@ -38,6 +39,7 @@ func _on_row_count_changed(new_amount: float) -> void:
 			child.queue_free()
 			_redraw_row_counts()
 	_count = _records.get_child_count()
+	_pagination.num_items = _count
 
 func _add_row() -> void:
 	var row := ResourceRow.new()

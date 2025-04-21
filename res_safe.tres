@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="SafeResource" load_steps=3 format=3 uid="uid://bkb8eeln6hmc8"]
+[gd_resource type="Resource" script_class="SafeResource" load_steps=2 format=3 uid="uid://bkb8eeln6hmc8"]
 
 [ext_resource type="Script" uid="uid://63f5hnoesqhs" path="res://resource_safe.gd" id="1_73g5j"]
-[ext_resource type="PackedScene" uid="uid://cscgwqstvsio1" path="res://example_scene.tscn" id="1_iil5v"]
 
 [resource]
 script = ExtResource("1_73g5j")
 scene_path = "uid://b78882h1w2tc1"
-arr = Array[PackedScene]([ExtResource("1_iil5v")])
+arr = Array[PackedScene]([])
 arrs = Array[String]([])
 metadata/_custom_type_script = "uid://63f5hnoesqhs"

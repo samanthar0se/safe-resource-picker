@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk5rud0tj5o22"]
+
+[ext_resource type="Script" uid="uid://qyygomobccfs" path="res://addons/safe_resource_picker/pagination.gd" id="1_jvelf"]
+
+[node name="Pagination" type="HBoxContainer"]
+size_flags_horizontal = 4
+script = ExtResource("1_jvelf")
+
+[node name="FirstPage" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PreviousPage" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PageNumber" type="LineEdit" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "1"
+alignment = 2
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="MaxPageLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "/ 2"
+
+[node name="NextPage" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="LastPage" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2

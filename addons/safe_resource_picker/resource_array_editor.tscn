@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnhv2yvr3dka0"]
+[gd_scene load_steps=3 format=3 uid="uid://cnhv2yvr3dka0"]
 
 [ext_resource type="Script" uid="uid://s82s2w7elvlx" path="res://addons/safe_resource_picker/resource_array_editor.gd" id="1_qf2f1"]
+[ext_resource type="PackedScene" uid="uid://dk5rud0tj5o22" path="res://addons/safe_resource_picker/pagination.tscn" id="2_s1xyi"]
 
 [node name="ResourceArrayEditor" type="VBoxContainer"]
 offset_right = 1152.0
@@ -50,3 +51,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Add Element"
+
+[node name="Pagination" parent="PanelContainer/VBoxContainer" instance=ExtResource("2_s1xyi")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2

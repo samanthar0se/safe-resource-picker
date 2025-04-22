@@ -1,5 +1,5 @@
 @tool
-class_name Pagination extends HBoxContainer
+class_name EditorArrayPagination extends HBoxContainer
 
 const _ITEMS_PER_PAGE := 10
 

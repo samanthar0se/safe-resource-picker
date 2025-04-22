@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cnhv2yvr3dka0"]
 
 [ext_resource type="Script" uid="uid://s82s2w7elvlx" path="res://addons/safe_resource_picker/array/resource_array_editor.gd" id="1_qf2f1"]
-[ext_resource type="PackedScene" uid="uid://dk5rud0tj5o22" path="res://addons/safe_resource_picker/array/pagination.tscn" id="2_s1xyi"]
+[ext_resource type="PackedScene" uid="uid://dk5rud0tj5o22" path="res://addons/safe_resource_picker/array/editor_array_pagination.tscn" id="2_s1xyi"]
 
 [sub_resource type="Image" id="Image_1s8sf"]
 data = {
@@ -49,6 +49,6 @@ size_flags_vertical = 4
 text = "Add Element"
 icon = SubResource("ImageTexture_aln84")
 
-[node name="Pagination" parent="VBoxContainer" instance=ExtResource("2_s1xyi")]
+[node name="EditorArrayPagination" parent="VBoxContainer" instance=ExtResource("2_s1xyi")]
 unique_name_in_owner = true
 layout_mode = 2

@@ -45,7 +45,3 @@ Dictionaries with Resources as the keys or values are not supported. As recreati
  - I would like to make the Array editor match the native Godot editor a bit better (highlighting the panel when it's expanded) but to my knowledge this is not feasible unless the engine surfaces more editor controls in GDScript as well.
  - The Godot Editor doesn't seem to translate error strings right now. If this ever changes, it would be nice to have translations for the two error strings this plugin can emit.
  - Other new features are unlikely.
-
-# Credits
-
-The [Editor Debugger plugin](https://github.com/Zylann/godot_editor_debugger_plugin) by [Zylann](https://github.com/Zylann) and [Godot Editor Icons Previewer](https://github.com/Xrayez/godot-editor-icons-previewer/tree/gd3) by [Xrayez](https://github.com/Xrayez) were both used to assist in the development of this plugin.

@@ -9,12 +9,18 @@ func _init(type: String) -> void:
 	add_child(_picker)
 
 func _on_resource_changed(r: Resource) -> void:
-	emit_changed(
-		get_edited_property(),
-		ResourceUID.id_to_text(
-			ResourceLoader.get_resource_uid(r.resource_path)
+	if r == null:
+		emit_changed(get_edited_property(), null)
+	elif r.resource_path == "":
+		printerr(SRP_HINT.LOCAL_RESOURCE_ERROR_STRING)
+		return
+	else:
+		emit_changed(
+			get_edited_property(),
+			ResourceUID.id_to_text(
+				ResourceLoader.get_resource_uid(r.resource_path)
+			)
 		)
-	)
 
 func _update_property() -> void:
 	var current_path: String = get_edited_object()[get_edited_property()]

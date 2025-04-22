@@ -17,7 +17,7 @@ func _on_button_pressed() -> void:
 			var timer := Time.get_ticks_msec()
 			_current_resource = load("res://res_norm.tres")
 			_regular_resource_load_time = Time.get_ticks_msec() - timer
-			_label.text = "A Resource containing a PackedScene reference to a 19MB glb model has just been loaded. It took %d milliseconds. Notice the changes in the Monitors in the Debugger tab, despite nothing being added to the scene yet. Click the button below to add the loaded GLB to the scene." % _regular_resource_load_time
+			_label.text = "A Resource containing PackedScene references to 19 different 19MB glb model has just been loaded. It took %d milliseconds. Notice the changes in the Monitors in the Debugger tab, despite nothing being added to the scene yet. Click the button below to add one of the loaded GLBs to the scene." % _regular_resource_load_time
 			_button.text = "Add Node"
 		1:
 			var timer := Time.get_ticks_msec()
@@ -30,13 +30,13 @@ func _on_button_pressed() -> void:
 			_current_node.queue_free()
 			_current_node = null
 			_current_resource = null
-			_label.text = "All gone. Now try loading the Safe Resource, which contains just the UID of that same 19MB glb file."
+			_label.text = "All gone. Now try loading the Safe Resource, which contains just the UIDs of those same 19MB glb files."
 			_button.text = "Load Safe Resource into Memory"
 		3:
 			var timer := Time.get_ticks_msec()
 			_current_resource = load("res://res_safe.tres")
 			_safe_resource_load_time = Time.get_ticks_msec() - timer
-			_label.text = "That only took %d milliseconds. Notice the changes in the Monitors in the Debugger tab compared to the previous resource. Click the button below to add the loaded GLB to the scene." % _safe_resource_load_time
+			_label.text = "That only took %d milliseconds. Notice the changes in the Monitors in the Debugger tab compared to the previous resource. Click the button below to add one of the loaded GLBs to the scene." % _safe_resource_load_time
 			_button.text = "Add Node"
 		4:
 			var timer := Time.get_ticks_msec()

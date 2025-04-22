@@ -1,9 +1,28 @@
-[gd_resource type="Resource" script_class="NormalResource" load_steps=3 format=3 uid="uid://wg64cjcei7x3"]
+[gd_resource type="Resource" script_class="NormalResource" load_steps=21 format=3 uid="uid://wg64cjcei7x3"]
 
+[ext_resource type="PackedScene" uid="uid://b78882h1w2tc1" path="res://orbs/orb.glb" id="1_5qqk6"]
 [ext_resource type="Script" uid="uid://dtn8ictl7n6t0" path="res://resource_normal.gd" id="1_24xoq"]
-[ext_resource type="PackedScene" uid="uid://b78882h1w2tc1" path="res://orb.glb" id="1_lleu2"]
+[ext_resource type="PackedScene" uid="uid://c7mihpkc5u417" path="res://orbs/orb (another copy).glb" id="2_ijhph"]
+[ext_resource type="PackedScene" uid="uid://cumqrhhfmc1sx" path="res://orbs/orb (3rd copy).glb" id="3_r75jh"]
+[ext_resource type="PackedScene" uid="uid://etn50ngp1bar" path="res://orbs/orb (4th copy).glb" id="4_com5d"]
+[ext_resource type="PackedScene" uid="uid://e4kij30265rs" path="res://orbs/orb (5th copy).glb" id="5_uuu31"]
+[ext_resource type="PackedScene" uid="uid://c6u7ya7jn2ck4" path="res://orbs/orb (6th copy).glb" id="6_ot4mi"]
+[ext_resource type="PackedScene" uid="uid://cq3xy3orpncp7" path="res://orbs/orb (7th copy).glb" id="7_n3wrx"]
+[ext_resource type="PackedScene" uid="uid://dngfo0884flxr" path="res://orbs/orb (8th copy).glb" id="8_8fx1b"]
+[ext_resource type="PackedScene" uid="uid://b3tyftps8w2v4" path="res://orbs/orb (9th copy).glb" id="9_wvdus"]
+[ext_resource type="PackedScene" uid="uid://cfqcvjeyma7jh" path="res://orbs/orb (10th copy).glb" id="10_3cmfb"]
+[ext_resource type="PackedScene" uid="uid://dh41mipplueo1" path="res://orbs/orb (11th copy).glb" id="11_hacwt"]
+[ext_resource type="PackedScene" uid="uid://bcmr5wvuwgwoe" path="res://orbs/orb (12th copy).glb" id="12_jrujo"]
+[ext_resource type="PackedScene" uid="uid://ewjdrmfl3ovj" path="res://orbs/orb (13th copy).glb" id="13_x0r77"]
+[ext_resource type="PackedScene" uid="uid://73qh6lgigxsr" path="res://orbs/orb (14th copy).glb" id="14_ucrku"]
+[ext_resource type="PackedScene" uid="uid://xi1tebxkooe4" path="res://orbs/orb (15th copy).glb" id="15_wl6sp"]
+[ext_resource type="PackedScene" uid="uid://d0py8opeup3w0" path="res://orbs/orb (16th copy).glb" id="16_bjodb"]
+[ext_resource type="PackedScene" uid="uid://sgmdgvwp400d" path="res://orbs/orb (17th copy).glb" id="17_3rev6"]
+[ext_resource type="PackedScene" uid="uid://bmhgv4mbygrya" path="res://orbs/orb (18th copy).glb" id="18_18a2e"]
+[ext_resource type="PackedScene" uid="uid://b0tmj85jyvx0w" path="res://orbs/orb (19th copy).glb" id="19_pv3pu"]
 
 [resource]
 script = ExtResource("1_24xoq")
-scene = ExtResource("1_lleu2")
+scene = ExtResource("1_5qqk6")
+scenes = Array[PackedScene]([ExtResource("2_ijhph"), ExtResource("3_r75jh"), ExtResource("4_com5d"), ExtResource("5_uuu31"), ExtResource("6_ot4mi"), ExtResource("7_n3wrx"), ExtResource("8_8fx1b"), ExtResource("9_wvdus"), null, ExtResource("10_3cmfb"), ExtResource("11_hacwt"), ExtResource("12_jrujo"), ExtResource("13_x0r77"), ExtResource("14_ucrku"), ExtResource("15_wl6sp"), ExtResource("16_bjodb"), ExtResource("17_3rev6"), ExtResource("18_18a2e"), ExtResource("19_pv3pu")])
 metadata/_custom_type_script = "uid://dtn8ictl7n6t0"

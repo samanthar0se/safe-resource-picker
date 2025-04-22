@@ -5,6 +5,5 @@
 [resource]
 script = ExtResource("1_73g5j")
 scene_path = "uid://b78882h1w2tc1"
-arr = Array[PackedScene]([])
-arrs = Array[String]([])
+scene_paths = Array[String](["uid://f33cwcijp0im", "uid://c7mihpkc5u417", "uid://cumqrhhfmc1sx", "uid://etn50ngp1bar", "uid://e4kij30265rs", "uid://c6u7ya7jn2ck4", "uid://cq3xy3orpncp7", "uid://dngfo0884flxr", "uid://b3tyftps8w2v4", "uid://cfqcvjeyma7jh", "uid://dh41mipplueo1", "uid://bcmr5wvuwgwoe", "uid://ewjdrmfl3ovj", "uid://73qh6lgigxsr", "uid://xi1tebxkooe4", "uid://d0py8opeup3w0", "uid://sgmdgvwp400d", "uid://bmhgv4mbygrya", ""])
 metadata/_custom_type_script = "uid://63f5hnoesqhs"

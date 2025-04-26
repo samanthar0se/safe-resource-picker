@@ -3,6 +3,8 @@
 ![Works with Godot 4.4 and higher](https://img.shields.io/badge/Godot_4.4%2B-blue?logo=godotengine&logoColor=white)
 ![MIT Licensed](https://img.shields.io/github/license/HauntedBees/safe-resource-picker.svg)
 
+![A table showing that the Safe Resource Picker has all the benefits of the default Resource Picker in the Inspector, in addition to not loading Resources when the parent Resource is loaded](images/comparison_table.png)
+
 If you've ever written `@export var scene: PackedScene` or `@export var item: CustomResource` in your resource or node to store data, then you're benefitting from the type safety of the Godot Inspector ensuring that only `PackedScene` or `CustomResource` values can be stored in your property. However, now your resource or node contains that entire resource, too, and whenever your resource or node loads, so does that resource!
 
 It's much more performant to write `@export var scene_path: String` and then use `var scene: PackedScene = load(scene_path)` later, but now the Inspector just shows a text field for that property, and *anything* can go in there!

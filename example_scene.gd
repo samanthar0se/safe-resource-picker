@@ -11,6 +11,12 @@ var _current_node: Node
 @onready var _label: Label = %Label
 @onready var _button: Button = %Button
 
+func _init() -> void:
+	var r := load("res://res_a.tres")
+	print(r.resource_path)
+	print(load(r.b).resource_path)
+	print(load(load(r.b).a).resource_path)
+
 func _on_button_pressed() -> void:
 	match _state:
 		0:
@@ -40,7 +46,7 @@ func _on_button_pressed() -> void:
 			_button.text = "Add Node"
 		4:
 			var timer := Time.get_ticks_msec()
-			_current_node = (load((_current_resource as SafeResource).scene_path) as PackedScene).instantiate()
+			_current_node = (load((_current_resource as CustomResource).scene_path) as PackedScene).instantiate()
 			add_child(_current_node)
 			_safe_resource_node_time = Time.get_ticks_msec() - timer
 			_label.text = "It took %d milliseconds to instantiate that PackedScene and add it to the scene. It took a bit longer since the 19MB model itself wasn't actually loaded until it was needed. Now click the button to clear everything one more time." % _safe_resource_node_time

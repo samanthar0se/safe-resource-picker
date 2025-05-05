@@ -9,6 +9,8 @@ It's much more performant to write `@export var scene_path: String` and then use
 
 With the **Safe Resource Picker**, you can write `@export_custom(SRP_HINT.RESOURCE_PATH, "PackedScene") var scene_path: String` and get the performance benefits of only storing a string with the Inspector interface of selecting a resource!
 
+In addition to performance benefits, it makes possible something that you can't normally accomplish with Custom Resources: cyclical references! If you've ever gotten the "Recursion detected, unable to assign resource to property" error when you wanted Resource A and Resource B to reference to each other, use the **Safe Resource Picker** and this limitation is gone!
+
 # Installation
 
 Download from the Godot Asset Library or GitHub and put the `safe_resource_picker` directory in your project's `res://addons` directory. Go to your Project Settings and enable the **Safe Resource Picker** plugin.
